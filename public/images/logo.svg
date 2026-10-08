@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E5C378" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#C9A86A" stop-opacity="0.25"/>
+      <stop offset="80%" stop-color="#162032" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DC9B"/>
+      <stop offset="50%" stop-color="#C9A86A"/>
+      <stop offset="100%" stop-color="#9E7D3B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="500" height="500" rx="40" fill="#0B0F19"/>
+  <circle cx="250" cy="250" r="235" fill="url(#bgGlow)"/>
+
+  <!-- Octagonal Parchment Border -->
+  <polygon points="120,40 380,40 460,120 460,380 380,460 120,460 40,380 40,120" 
+           fill="none" stroke="url(#goldStroke)" stroke-width="4" stroke-opacity="0.8"/>
+  <polygon points="125,50 375,50 450,125 450,375 375,450 125,450 50,375 50,125" 
+           fill="none" stroke="#C9A86A" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="6,4"/>
+
+  <!-- Compass Outer Circle -->
+  <circle cx="250" cy="250" r="185" fill="none" stroke="url(#goldStroke)" stroke-width="2.5" stroke-opacity="0.85"/>
+  <circle cx="250" cy="250" r="175" fill="none" stroke="#C9A86A" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Compass Star Rays -->
+  <!-- North Ray -->
+  <polygon points="250,70 258,230 250,220 242,230" fill="url(#goldStroke)"/>
+  <polygon points="250,70 250,220 242,230" fill="#E5C378" opacity="0.6"/>
+  <!-- South Ray -->
+  <polygon points="250,430 258,270 250,280 242,270" fill="url(#goldStroke)"/>
+  <!-- East Ray -->
+  <polygon points="430,250 270,258 280,250 270,242" fill="url(#goldStroke)"/>
+  <!-- West Ray -->
+  <polygon points="70,250 230,258 220,250 230,242" fill="url(#goldStroke)"/>
+  <!-- Diagonal Rays -->
+  <polygon points="377,123 260,240 268,232" fill="#C9A86A" opacity="0.6"/>
+  <polygon points="123,377 240,260 232,268" fill="#C9A86A" opacity="0.6"/>
+  <polygon points="123,123 240,240 232,248" fill="#C9A86A" opacity="0.6"/>
+  <polygon points="377,377 260,260 268,268" fill="#C9A86A" opacity="0.6"/>
+
+  <!-- Cardinal Direction Typography -->
+  <text x="250" y="62" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-weight="700" fill="#FAF7F0" text-anchor="middle">N</text>
+  <text x="444" y="259" font-family="'Cormorant Garamond', Georgia, serif" font-size="26" font-weight="700" fill="#FAF7F0" text-anchor="middle">E</text>
+  <text x="56" y="259" font-family="'Cormorant Garamond', Georgia, serif" font-size="26" font-weight="700" fill="#FAF7F0" text-anchor="middle">W</text>
+
+  <!-- Central Radiance Aura for Tree of Life -->
+  <circle cx="250" cy="250" r="110" fill="#E5C378" opacity="0.2" filter="blur(20px)"/>
+
+  <!-- Sacred Tree of Life (Foliage & Canopy) -->
+  <g fill="none" stroke="url(#goldStroke)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Canopy Branch Network -->
+    <path d="M 250 220 C 230 180, 180 170, 150 190 C 130 205, 140 230, 170 235 C 190 240, 210 230, 230 240" stroke-width="2.5"/>
+    <path d="M 250 220 C 270 180, 320 170, 350 190 C 370 205, 360 230, 330 235 C 310 240, 290 230, 270 240" stroke-width="2.5"/>
+    <path d="M 250 200 C 240 150, 200 130, 180 150 C 160 170, 190 190, 220 190" stroke-width="2"/>
+    <path d="M 250 200 C 260 150, 300 130, 320 150 C 340 170, 310 190, 280 190" stroke-width="2"/>
+    <path d="M 250 180 C 250 130, 225 110, 250 100 C 275 110, 250 130, 250 180" stroke-width="2"/>
+
+    <!-- Delicate Foliage Leaves -->
+    <circle cx="160" cy="180" r="4" fill="#E5C378" stroke="none"/>
+    <circle cx="140" cy="200" r="4.5" fill="#E5C378" stroke="none"/>
+    <circle cx="180" cy="140" r="3.5" fill="#E5C378" stroke="none"/>
+    <circle cx="210" cy="120" r="4" fill="#E5C378" stroke="none"/>
+    <circle cx="250" cy="110" r="5" fill="#FAF7F0" stroke="none"/>
+    <circle cx="290" cy="120" r="4" fill="#E5C378" stroke="none"/>
+    <circle cx="320" cy="140" r="3.5" fill="#E5C378" stroke="none"/>
+    <circle cx="360" cy="200" r="4.5" fill="#E5C378" stroke="none"/>
+    <circle cx="340" cy="180" r="4" fill="#E5C378" stroke="none"/>
+    <circle cx="200" cy="160" r="3" fill="#E5C378" stroke="none"/>
+    <circle cx="300" cy="160" r="3" fill="#E5C378" stroke="none"/>
+
+    <!-- Interwoven Twisted Trunk -->
+    <path d="M 240 240 C 245 270, 258 290, 248 320 C 240 345, 230 360, 215 375" stroke-width="5"/>
+    <path d="M 260 240 C 255 270, 242 290, 252 320 C 260 345, 270 360, 285 375" stroke-width="5"/>
+    <path d="M 250 230 C 242 260, 256 280, 250 310 C 245 330, 250 350, 250 375" stroke-width="3"/>
+
+    <!-- Sprawling Roots -->
+    <path d="M 220 370 C 190 390, 160 410, 140 435" stroke-width="3"/>
+    <path d="M 230 375 C 210 405, 185 430, 165 450" stroke-width="2.5"/>
+    <path d="M 240 375 C 235 410, 220 440, 210 460" stroke-width="2"/>
+    <path d="M 250 375 C 250 415, 252 445, 250 465" stroke-width="2.5"/>
+    <path d="M 260 375 C 265 410, 280 440, 290 460" stroke-width="2"/>
+    <path d="M 270 375 C 290 405, 315 430, 335 450" stroke-width="2.5"/>
+    <path d="M 280 370 C 310 390, 340 410, 360 435" stroke-width="3"/>
+  </g>
+</svg>

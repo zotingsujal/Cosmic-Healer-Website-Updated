@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  /* Primary light warm luxury palette */
+  --color-warm-ivory: #F7F3EA;
+  --color-pearl-ivory: #FBF9F4;
+  --color-warm-sand: #EFE7D8;
+  --color-warm-sand-light: #F4EFE6;
+  
+  /* Primary & secondary typography */
+  --color-deep-charcoal: #24211D;
+  --color-muted-warm-gray: #6F6A61;
+  --color-light-warm-gray: #A09A8F;
+  
+  /* Restrained Champagne Gold Accents */
+  --color-champagne-gold: #B89A63;
+  --color-champagne-gold-light: #CBB280;
+  --color-champagne-gold-dark: #9E824D;
+  --color-champagne-gold-subtle: rgba(184, 154, 99, 0.16);
+  
+  /* Dark Contrast Sections (Final CTA & Footer) */
+  --color-deep-navy: #111827;
+  --color-deep-indigo: #1C2340;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F7F3EA;
+    color: #1A1714;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom refined warm scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #E0D7C6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B89A63;
+}
+
+/* Custom review scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom-review-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-review-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-review-scroll::-webkit-scrollbar-thumb {
+  background: rgba(184, 154, 99, 0.3);
+  border-radius: 2px;
+}
+.custom-review-scroll::-webkit-scrollbar-thumb:hover {
+  background: #B89A63;
+}
+
+/* Automatic Smooth Side Scrolling Carousel */
+@keyframes smooth-carousel-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-smooth-carousel {
+  display: flex;
+  width: max-content;
+  animation: smooth-carousel-scroll 65s linear infinite;
+  will-change: transform;
+}
+
+.animate-smooth-carousel:hover {
+  animation-play-state: paused;
+}

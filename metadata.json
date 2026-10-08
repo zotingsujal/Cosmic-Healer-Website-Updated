@@ -1,0 +1,8 @@
+{
+  "name": "Remix Cosmic Healer",
+  "description": "A premium, sophisticated platform offering expert spiritual guidance, astrology, and personalized wellness consultations for modern, mindful living.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
